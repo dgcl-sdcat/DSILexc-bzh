@@ -10,13 +10,20 @@
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <style>
         #map {
-            width: 693px;
-            height: 540px;
+            width: 1200px;
+            height: 700px;
         }
         </style>
         <title></title>
     </head>
     <body>
+        <h1> Communes et EPCI de la région Bretagne qui ont bénéficié de la DSIL exceptionnelle </h1>
+        <h2> Liste des projets selon le bénéficiaire et la thématique </2>
+        
+        <h4> Au 11 Mars 2021 </h4>
+        
+        <hr>
+        
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
@@ -52,7 +59,7 @@
         map.getPane('pane_OSMStandard_0').style.zIndex = 400;
         var layer_OSMStandard_0 = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             pane: 'pane_OSMStandard_0',
-            opacity: 1.0,
+            opacity: 0.5,
             attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
             minZoom: 1,
             maxZoom: 28,
